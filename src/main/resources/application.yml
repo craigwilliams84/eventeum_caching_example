@@ -1,0 +1,12 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8080
+
+kafka:
+  bootstrap:
+    addresses: ${KAFKA_ADDRESSES:kafka:9092}
+
+logging:
+  level:
+    org.apache.kafka: WARN
